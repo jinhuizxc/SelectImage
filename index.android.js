@@ -29,6 +29,10 @@ export default class SelectImage extends React.Component {
             quality: 1.0,
             maxWidth: 500,
             maxHeight: 500,
+            title:'请选择',
+            cancelButtonTitle:'取消',
+            takePhotoButtonTitle:'拍照',
+            chooseFromLibraryButtonTitle:'选择相册',
             storageOptions: {
                 skipBackup: true
             }
@@ -60,8 +64,10 @@ export default class SelectImage extends React.Component {
     selectVideoTapped() {
         const options = {
             title: 'Video Picker',
-            takePhotoButtonTitle: 'Take Video...',
+            takePhotoButtonTitle: '拍视频',
             mediaType: 'video',
+            cancelButtonTitle:'取消',
+            chooseFromLibraryButtonTitle:'从图库中选择',
             videoQuality: 'medium'
         };
 
